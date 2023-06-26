@@ -1,0 +1,164 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    height: 100vh;
+    }
+/*----------------------------------------------------------------------------------------------------*/
+.header{
+    background-color: #f0f9ff;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    box-shadow:  0 4px 2px 0 #888888;
+    padding-right: 40px;
+
+}
+
+/* .search{
+    background-color: red;
+}
+
+.userinfo{
+    background-color: purple;
+}
+
+.greeting{
+    background-color: green;
+}*/
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+} 
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+button{
+    background-color: #0284c7;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    padding: 8px 30px;
+    border-style: none;
+    border-radius: 20px;
+}
+/*----------------------------------------------------------------------------------------------------*/
+
+.sidebar{
+    background-color: #0ea5e9;
+    grid-row: 1 /3;
+
+    display: grid;
+    grid-template-rows: 1fr 4fr 2fr;
+    padding: 8px;
+}
+
+.logo{
+    grid-row: 1 / 2;
+    /* background-color: green; */
+}
+
+.nav{
+    grid-row: 2/3;
+    /* background-color: yellow; */
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    padding: 4px;
+    gap: 2px;
+}
+
+.nav-item{
+    /* background-color: red; */
+}
+
+.settings{
+    grid-row: 3/4;
+    /* background-color: orange; */
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    padding: 4px;
+    gap: 2px;
+}
+
+.settings-item{
+    /* background-color: green; */
+
+}
+/*----------------------------------------------------------------------------------------------------*/
+
+.main{
+    background-color: #e0f2fe;
+    display: grid;
+    padding: 8px;
+
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 40px 1fr;
+}
+
+/* .project-title{
+    background-color: red;
+}
+
+.announcement-title{
+    background-color: blue;
+} */
+
+.projects{
+    /* background-color: green; */
+    display: grid;
+    padding: 10px;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.card{
+    background-color: #f0f9ff; 
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 8px 1fr;
+    box-shadow: 1px 1px 4px #888888;
+}
+
+.card > .note{
+    background-color: #fbbf24;
+    border-radius: 8px 0 0 8px;
+}
+
+.announcements{
+    /* background-color: yellow; */
+    display: grid;
+    grid-template-rows: 4fr 1fr 4fr;
+    padding: 4px;
+}
+
+.announce-card,
+.trending-card{
+    border-radius: 8px;
+    background-color: #f0f9ff; 
+    box-shadow: 1px 1px 4px #888888;
+
+}
+
+/* .announce-card{
+    background-color: green;
+}
+
+.trending{
+    background-color: red;
+}
+
+.trending-card{
+    background-color: blue;
+} */
+
+
+
